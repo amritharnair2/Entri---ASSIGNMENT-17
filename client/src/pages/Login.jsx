@@ -23,7 +23,7 @@ function Login() {
         axiosInstance.post("/user/login", values)
             .then((res) => {
                 console.log(res);
-                navigate("/");
+                navigate("/dashboard");
             })
             .catch((err) => {
                 console.log(err);

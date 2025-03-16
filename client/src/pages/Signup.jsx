@@ -25,7 +25,7 @@ function Signup() {
         console.log(values)
         axiosInstance.post("/user/register",values).then((res) => {
             console.log(res) 
-            navigate("/")
+            navigate("/dashboard")
         }).catch((err) => {
             console.log(err)
             alert("Something went wrong")
